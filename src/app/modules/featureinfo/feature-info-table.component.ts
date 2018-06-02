@@ -1,4 +1,4 @@
-import 'rxjs/add/observable/of';
+
 
 import { DataSource } from '@angular/cdk/collections';
 import {
@@ -14,7 +14,9 @@ import {
   Output
 } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import {Observable} from 'rxjs';
+
 
 import { MangolLayer } from './../../classes/layer.class';
 import { MangolFeatureInfoTableDialogComponent } from './feature-info-table-dialog.component';

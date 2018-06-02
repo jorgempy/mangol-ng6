@@ -2,9 +2,9 @@
     <mat-drawer-container autosize>
         <mat-drawer #start
             *ngIf="config.sidebar && sidebarMode && map"
-            align="start"
-            (open)="updateMap()"
-            (close)="isOpened=false"
+            position="start"
+            (opened)="updateMap()"
+            (closed)="isOpened=false"
             (openedChange)="updateMap()"
             opened="{{isOpened}}"
             mode="{{sidebarMode}}"

@@ -1,12 +1,15 @@
-import 'rxjs/add/observable/of';
+
 
 import { DataSource } from '@angular/cdk/collections';
 import { Component, Inject, OnInit, ViewEncapsulation } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
-import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import {Observable} from 'rxjs';
 
 import { MangolLayer } from './../../classes/layer.class';
 import { MangolFeatureInfoTableElement } from './feature-info-table-element.interface';
+
+import 'rxjs/add/observable/of';
 
 @Component({
   selector: 'mangol-feature-info-table-dialog',

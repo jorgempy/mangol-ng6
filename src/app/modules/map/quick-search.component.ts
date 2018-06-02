@@ -1,10 +1,13 @@
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/startWith';
+
+
 
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatAutocompleteSelectedEvent } from '@angular/material';
-import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/startWith';
+import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs';
+
 
 import { MangolMap } from '../../classes/map.class';
 import {

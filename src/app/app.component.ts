@@ -7,7 +7,7 @@ import {
   OnInit
 } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 import {
   homeButtonStateTrigger,

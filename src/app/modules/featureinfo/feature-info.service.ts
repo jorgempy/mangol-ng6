@@ -1,10 +1,10 @@
-import 'rxjs/add/observable/throw';
+
+import {throwError as observableThrowError,  Observable ,  BehaviorSubject } from 'rxjs';
+
 
 import { Injectable } from '@angular/core';
 import { Headers, Http, Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
 import { catchError, map } from 'rxjs/operators';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class MangolFeatureIntoService {
@@ -27,7 +27,7 @@ export class MangolFeatureIntoService {
         }),
         catchError((error: Response) => {
           console.log(error);
-          return Observable.throw(error);
+          return observableThrowError(error);
         })
       );
   }
