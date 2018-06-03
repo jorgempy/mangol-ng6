@@ -1,0 +1,53 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+yarn.lock
+# compiled output
+/dist
+/dist_demo
+/tmp
+/out-tsc
+/.ng_pkg_build
+/doc
+dist.tgz
+
+# dependencies
+/node_modules
+/example_project/node_modules
+yarn.lock
+yarn-error.log
+package-lock.json
+/example_project/yarn.lock
+/example-project/yarn-error.lock
+/example-project/package-lock.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
